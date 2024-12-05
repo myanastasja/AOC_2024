@@ -1,8 +1,6 @@
 source("01_input.R")
 
 mytext <- str_split(mytext, "\n", n = Inf, simplify = FALSE)
-# typeof(mytext)
-# length(mytext[[1]])
 
 list_one <- c()
 list_two <- c()
