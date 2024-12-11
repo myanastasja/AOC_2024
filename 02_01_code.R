@@ -17,8 +17,6 @@ issafe <- function(x) {
 reports <- str_split(reports_input, "\n", n = Inf, simplify = FALSE)
 sep_reports <- unlist(reports)
 
-logicalarray <- sapply(sep_reports, issafe) %>% unlist()
-
 logicalarray <- lapply(sep_reports, issafe) %>% unlist()
 safe_reports <- length(logicalarray[logicalarray==TRUE])
 
