@@ -32,3 +32,5 @@ sep_reports <- unlist(reports)
 
 logicalarray <- lapply(sep_reports, issafe_after_dumpener) %>% unlist()
 safe_reports <- length(logicalarray[logicalarray==TRUE])
+
+# 710

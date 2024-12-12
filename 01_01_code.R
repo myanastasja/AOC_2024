@@ -1,4 +1,4 @@
-source("01_input.R")
+source("01_01_input.R")
 
 mytext <- str_split(mytext, "\n", n = Inf, simplify = FALSE)
 
@@ -14,3 +14,4 @@ list_one <- list_one %>% sort() %>% strtoi()
 list_two <- list_two %>% sort() %>% strtoi()
 result <- sum(abs(list_one - list_two))
 result  
+# 2000468

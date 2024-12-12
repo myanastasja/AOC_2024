@@ -20,3 +20,4 @@ sep_reports <- unlist(reports)
 logicalarray <- lapply(sep_reports, issafe) %>% unlist()
 safe_reports <- length(logicalarray[logicalarray==TRUE])
 
+# 680
